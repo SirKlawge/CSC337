@@ -1,0 +1,73 @@
+body {
+	background-color: darkgrey;	
+}
+
+.menuButtons {
+	display: flex;
+}
+
+.ddButton {
+	background-color: darkgrey;
+	width: 100px;
+	height: 80px;
+	margin: none;
+	border: none;
+	font-size: 16pt;
+	font-weight: bold;
+	opacity: 0.6;
+	transition: 0.3s;
+	cursor: pointer;
+	position: relative;
+}
+
+.ddButton:hover {
+	opacity: 1;
+	font-size: 17pt;
+	
+}
+
+.recipeDDBox {
+	display: none;
+	background-color: darkgrey;
+	width: fit-content;
+	margin: none;
+	border: none;
+	font-size: 16pt;
+	font-weight: bold;
+	position: absolute;
+	cursor: pointer;
+}
+
+.recipeButton:hover .recipeDDBox {
+	display: block;
+}
+
+.copyright {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+}
+
+.directions {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 20%;
+	right: 0;
+	margin: auto;
+}
+
+.topHeader {
+	position: relative;
+	top: 10px;
+}
+
+.itemList {
+	position: relative;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.outerList {
+	list-style-type: none;
+}
