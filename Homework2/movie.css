@@ -11,7 +11,7 @@ body {
     background-color: white;
     width: 1100px;
     margin: auto;
-    height: 300px;
+    height: 1000px;
 }
 
 header {
@@ -63,14 +63,68 @@ header {
 }
 
 nav {
+    display: flex;
     height: 30px;
     background-color: #6F6F6F;
 }
 
+#recommendLink {
+    display: inline;
+    color: #EFD921;
+    margin-left: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.otherNavLink {
+    display: inline;
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-left: 15px;
+    cursor: pointer;
+}
 aside {
     float: left;
     width: 315px;
     border: solid 1px #E9E9EA;
     background-color: white;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: -450px;
+}
+
+article {
+    float: right;
+    width: 740px;
+    margin-top: 20px;
+}
+
+#video {
+    border: 0;
+    border-radius: 15px;
+}
+
+#posterAndScore {
+    display:flex;
+}
+
+#posterSmall {
+    display: inline;
+    float: left;
+    width: 155px;
+    height: 220px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+#score {
+    height: 220px;
+    float: right;
+    width: 570px;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    margin-left: 14px;
+    margin-top: 25px;
 }
