@@ -11,7 +11,7 @@ body {
     background-color: white;
     width: 1100px;
     margin: auto;
-    height: 1000px;
+    height: 20px;
 }
 
 header {
@@ -85,25 +85,66 @@ nav {
     padding-left: 15px;
     cursor: pointer;
 }
+
+#mainContentBox {
+    display: flex;
+    background-color: white;
+}
+
 aside {
     float: left;
-    width: 315px;
+    width: 350px;
     border: solid 1px #E9E9EA;
-    background-color: white;
     margin-top: 20px;
+    margin-left: 15px;
+    height: fit-content;
+}
+
+#sbHeading {
+    font-size: 14px;
+    margin: 10px;
+    font-weight: 2000;
+}
+
+#popularMoviesGrid {
+    display: grid;
+    grid-template-columns: auto auto;
     margin-left: 10px;
-    margin-right: -450px;
+    row-gap: 5px;
+}
+
+.movieRating {
+    display: flex;
+}
+
+.popularMovieTitles:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.movieRating img {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.popularMovieTitles {
+    padding-top: 3px;
+    margin-left: -10px;
 }
 
 article {
     float: right;
-    width: 740px;
+    width: 100%;
     margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #video {
     border: 0;
     border-radius: 15px;
+    width: 100%;
+    height: 420px;
 }
 
 #posterAndScore {
@@ -120,11 +161,57 @@ article {
 }
 
 #score {
+    display: flex;
+    flex-direction: column;
     height: 220px;
     float: right;
-    width: 570px;
+    width: 100%;
     background-color: #f3f3f3;
     border-radius: 15px;
     margin-left: 14px;
     margin-top: 25px;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#currentMovieTitle {
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+p span {
+    border: 1px solid darkgrey;
+}
+
+.ratingsBox {
+    margin-top: 30px;
+    display:flex;
+}
+
+#mainStateScoreImg {
+    width: 100px;
+}
+
+#audienceScoreImg {
+    margin-left: 60px;
+    width: 100px;
+}
+
+.ratingsBox h1 {
+    font-size: 60px;
+}
+
+.ratingsBoxInfo {
+    margin-top: 10px;
+    display: flex;
+    font-weight: 600;
+}
+
+#peoplesScore {
+    margin-left: 60px;
+}
+
+#note {
+    font-weight: 700;
 }
