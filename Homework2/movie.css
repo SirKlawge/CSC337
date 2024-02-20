@@ -215,3 +215,70 @@ p span {
 #note {
     font-weight: 700;
 }
+
+.sectionHeader {
+    margin-top: 45px;
+    border-left: 3px solid #FA320A;
+    padding-left: 5px;
+}
+
+.consensusHead {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.consensusHead img {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.review {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#recommendationsGrid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.recThumbnailAndReview {
+    margin-right: -120px;
+}
+
+.recThumbnailAndReview:hover {
+    cursor: pointer;
+}
+
+.recPoster {
+    border-radius: 15px;
+    width: 130px;
+    height: 185px;
+}
+
+.recReview {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.recReview img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.recPeoplesScore {
+    margin-left: 15px;
+}
+
+#ratingSystem {
+    display: flex;
+}
+
+#ratingSystem img {
+    width: 30px;
+    height: 30px;
+}
