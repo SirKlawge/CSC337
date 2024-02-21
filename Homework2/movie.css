@@ -1,3 +1,11 @@
+/*
+Author: Ventura Abram
+Homework 2: movie review
+Description: This is the style sheet for the movie review web page.
+It's an approximation of the style seen in the provided Rotten Tomatoes 
+example.
+*/
+
 * {
     padding: 0;
     margin: 0;
