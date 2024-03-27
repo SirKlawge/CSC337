@@ -1,20 +1,122 @@
+<!--
+Author: Ventura Abram
+Homework 4: Resume
+file: resume.html
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resumeStyle.css"/>
-    <title>Ace It</title>
+    <link rel="stylesheet" href="resumeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <title>Ventura Abram: Ultrasound and Software Services</title>
 </head>
 <body>
     <div id="container">
-        <!-- We're gonna have two large panels in the body -->
-        <div id="USPanel" class="mainPanel">
-            <h1>This is the US panel</h1>
+        <!-- header should contain my name and a couple of buttons -->
+        <header>
+            <h2 id="nameTitle">Ventura Abram</h2>
+            <nav id="topButtonBox">
+                <button class="navButton" id="aboutButton">About Me</button>
+                <button class="navButton" id="contactButton">Contact</button>
+            </nav>
+        </header>
+        <div id="mainContent">
+            <img src="mainBGimageCrop.png" id="selfPortrait"/>
+            <div id="bottonAndDivBox">
+                <button class="contentButton" id="USButton"></button>
+                <button class="contentButton" id="CSButton"></button>
+                <div id="infoWindow">
+                    <div id="aboutMeInfo" class="infoContent">
+                        <h1>Ventura Abram RDMS</h1>
+                        <h2>Sonographer and Computer Scientist</h2>
+                        <p>
+                            There aren't a whole lot of people who have such a disjointed set of 
+                            interests, but Ventura's thirst for knowledge knows no bounds.  Ventura 
+                            brings this thirst and tenacity to every endeavor.  Lauded for his many 
+                            virtues, ranging from soothing bedside manner to sharp critical thinking, 
+                            Ventura is a valuable addition to any team.
+                        </p>
+                    </div>
+                    <div id="contactInfo" class="infoContent">
+                        <h1>Contact</h1>
+                        <h2>E-mail: vabram@arizona.edu</h2>
+                        <h2>Phone: (520) 555-6543</h2>
+                    </div>
+                    <div id="csInfo" class="infoContent">
+                        <h1>Computer Science</h1>
+                        <h2>Education</h2>
+                        <h4>Work in progress...</h4>
+                    </div>
+                    <div id="ultrasoundInfo" class="infoContent">
+                        <h1>Ultrasound</h1>
+                        <h2>Education</h2>
+                        <h4>
+                            Central New Mexico Community College</br>
+                            Associate of Applied Science</br>
+                            Major: Diagnostic Medical Sonography</br>
+                            Graduated: December 2014 with Honors
+                        </h4>
+                        <h2>Certifications</h2>
+                        <h4>
+                            RDMS - Abdomen since 04/2015</br>
+                            RVT - Vascular since 07/2015</br>
+                            CPR - Certified since 2015
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="devPanel" class="mainPanel">
-            <h1>This is the dev panel!</h1>
-        </div>
+        <!-- footer at the bottom will contain links to socials -->
+        <footer>
+            <img src="linkedInIsHelpful.png"/>
+            <img src="instagramIcon.png"/>
+            <img src="facebookIcon.png"/>
+        </footer>
     </div>
+    <script>
+        //Get buttons
+        var aboutButton = document.getElementById("aboutButton");
+        var contactButton = document.getElementById("contactButton");
+        var usButton = document.getElementById("USButton");
+        var csButton = document.getElementById("CSButton");
+        //get divs
+        var aboutMeDiv = document.getElementById("aboutMeInfo");
+        var contactInfoDiv = document.getElementById("contactInfo");
+        var usInfoDiv = document.getElementById("ultrasoundInfo");
+        var csInfoDiv = document.getElementById("csInfo");
+        //About button functionality.
+        aboutButton.addEventListener('mouseenter', ()=> {
+            usInfoDiv.style.opacity = 0;
+            csInfoDiv.style.opacity = 0;
+            contactInfoDiv.style.opacity = 0;
+            aboutMeDiv.style.opacity = 1;
+        });
+        //Contact button functionality
+        contactButton.addEventListener('mouseenter', ()=> {
+            usInfoDiv.style.opacity = 0;
+            aboutMeDiv.style.opacity = 0;
+            csInfoDiv.style.opacity = 0;
+            contactInfoDiv.style.opacity = 1;
+        });
+        //US button functionality
+        usButton.addEventListener('mouseenter', ()=> {
+            aboutMeDiv.style.opacity = 0;
+            contactInfoDiv.style.opacity = 0;
+            csInfoDiv.style.opacity = 0;
+            usInfoDiv.style.opacity = 1;
+        });
+        //CS button functionality.
+        csButton.addEventListener('mouseenter', ()=> {
+            usInfoDiv.style.opacity = 0;
+            aboutMeDiv.style.opacity = 0;
+            contactInfoDiv.style.opacity = 0;
+            csInfoDiv.style.opacity = 1;
+        });
+    </script>
 </body>
 </html>
