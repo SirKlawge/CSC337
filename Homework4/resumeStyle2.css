@@ -37,6 +37,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .navButton:hover {
@@ -61,6 +62,10 @@ footer {
     width: 50vw;
 }
 
+#buttonAndDivBox {
+    height: inherit;
+}
+
 .buttonIcon {
     width: 50px;
 }
@@ -74,34 +79,43 @@ footer {
 }
 .contentButton {
     background-size: contain;
-    width: 50px;
-    height: 50px;
+    background-repeat: no-repeat;
+    width: 4%;
+    height: 6%;
+    border-bottom: none;
+    cursor: pointer;
 }
 
 #infoWindow {
-    background-color: green;
+    border-top: black, solid, 1px;
+    background-color: #F4ECD7;
     width: 50vw;
-    height: 500px;
+    height: 94%;
+    position: relative;
 }
 
 .infoContent {
     width: 100%;
     height: 100%;
-    transition: 0.3s;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    background-color: #58544b7c;
 }
 
 #aboutMeInfo {
-    background-color: red;
+    display:flex;
+    justify-content: center;
 }
 
 #contactInfo {
-    background-color: green;
+    display: flex;
 }
 
 #ultrasoundInfo {
-    background-color: blue;
+    display: flex;
 }
 
 #csInfo {
-    background-color: black;
+    display: flex;
 }
