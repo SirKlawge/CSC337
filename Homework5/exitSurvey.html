@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="surveyStyle.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+        <title>End of Relationship Survey</title>
+    </head>
+    <body>
+        <div id="mainContent">
+            <!-- Let's have a top banner that scrolls with the page -->
+            <div id="topBanner">
+                <img src="brokenHeart.png" id="leftHeart"/>
+                <h1>Ventura's Breakup Survey</h1>
+                <img src="brokenHeart.png" id="rightHeart"/>
+            </div>
+            <!-- Then we'll have the scrolling survey itself. -->
+            <div id="surveyIntroBox">
+                <h3>
+                    Thank you for following the link in the automated breakup text message!</br>
+                    Ventura is deeply sorry for what you must be feeling right now, </br>
+                    however, this is a time for us to learn from our* mistakes and to grow as people!</br>
+                    Please fill out this survey as a first step in taking a personal inventory </br>
+                    in our* journey to self-improvement.
+                </h2>
+            </div>
+            <form name="survey" method="post">
+                <div id="nameField">
+                    <div class="nameInputBox">
+                        <label for="fName">First name:</label>
+                        <input type="text" id="fName" name="firstNameInput"/>
+                    </div>
+                    <div class="nameInputBox">
+                        <label for="lName">Last name:</label>
+                        <input type="text" id="lName" name="lastNameInput"/>
+                    </div>
+                    <div id="lastName"></div>
+                </div>
+                <div id="durationBox">
+                    <h3 class="questionText">Approximately how long did our relationship last?</h3>
+                    <div id="radioButtonBox">
+                        <label>
+                            One date
+                            <input type="radio" name="duration" value="oneDate"/>
+                        </label>
+                        <label>
+                            One month
+                            <input type="radio" name="duration" value="oneMonth"/>
+                        </label>
+                        <label>
+                            1 - 3 months
+                            <input type="radio" name="duration" value="1-3Months"/>
+                        </label>
+                        <label>
+                            3 - 6 months
+                            <input type="radio" name="duration" value="3-6Months"/>
+                        </label>
+                        <label>
+                            ONE YEAR!
+                            <input type="radio" name="duration" value="oneYear"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="looksRatingsBox">
+                    <label for="myRating"><h3 class="questionText">
+                        On a scale of 1 to 10, how would you rate your physical appearance?
+                    </h3></label>
+                    <select id="myRating" name="selfRating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="looksRatingsBox">
+                    <label for="venturaRating"><h3 class="questionText">
+                        On a scale of 1 to 10, how would you rate Ventura's physical appearance?
+                    </h3></label>
+                    <select id="venturaRating" name="vRating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" selected="selected">10</option>
+                    </select>
+                </div>
+                <div id="infractionsBox">
+                    <h3 class="questionText">
+                        Please select all infractions you recall committing during your relationship
+                        with Ventura.
+                    </h3>
+                    <!--
+                        Being late for a date
+                        poor treatment of waiting staff
+                        back talk
+                        excessive interruptions
+                        looking him in the eye
+                        not laughing at jokes
+                        laughing too much at jokes
+                        No compliments about muscles
+                        Not wearing high-heels
+                        Wearing too-high-heels.
+
+                    -->
+                    <input type="checkbox" id="infrac1" name="lateDate" value="infrac1"/>
+                    <label for="infrac1">I was late for a date</label>
+                    <input type="checkbox" id="infrac2" name="poorWait" value="infrac2"/>
+                    <label for="infrac2">I treat wait staff poorly</label>
+                    <input type="checkbox" id="infrac3" name="backTalk" value="infrac3"/>
+                    <label for="infrac3">Back talking Ventura</label>
+                    <input type="checkbox" id="infrac4" name="interrupt" value="infrac1"/>
+                    <label for="infrac1">I was late for a date</label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

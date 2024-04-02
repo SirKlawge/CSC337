@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(146, 237, 237);
+    margin: auto;
+}
+
+#mainContent {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+    border-left: solid rgb(53, 68, 68);
+    border-right: solid rgb(53, 68, 68);
+}
+
+#topBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgb(103, 131, 131);
+}
+
+#topBanner img {
+    width: 50px;
+    height: 50px;
+}
+
+#leftHeart {
+    rotate: -30deg;
+}
+
+#rightHeart {
+    rotate: 30deg;
+}
+
+#topBanner h1 {
+    font-family: "Butterfly Kids", cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#surveyIntroBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nameField {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nameInputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#radioButtonBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.looksRatingsBox {
+    display: flex;
+    align-items: center;
+}
+
+.looksRatingsBox select {
+    height: 25px;
+    margin-left: 10px;
+}
