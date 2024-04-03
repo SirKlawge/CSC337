@@ -1,3 +1,7 @@
+/*
+Author: Ventura Abram
+Homework 5
+*/
 body {
     background-color: rgb(146, 237, 237);
     margin: auto;
@@ -11,6 +15,7 @@ body {
     height: 100%;
     border-left: solid rgb(53, 68, 68);
     border-right: solid rgb(53, 68, 68);
+    border-bottom: solid rgb(53, 68, 68);
 }
 
 #topBanner {
@@ -50,6 +55,10 @@ body {
     justify-content: space-evenly;
 }
 
+.questionText {
+    margin-left: 5px;
+}
+
 .nameInputBox {
     display: flex;
     flex-direction: column;
@@ -68,4 +77,45 @@ body {
 .looksRatingsBox select {
     height: 25px;
     margin-left: 10px;
+}
+
+#checkBoxBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.checkBoxChild {
+    display: flex;
+    flex-direction: column;
+}
+
+.taInput {
+    box-sizing: border-box;
+    width:90%;
+    margin-left: 10px;
+    resize: none;
+}
+
+#labelAndSelect {
+    display: flex;
+    height: 25px;
+    align-items: center;
+}
+
+#argumentsBox select {
+    margin-left: 10px;
+}
+
+#buttonBox {
+    display: flex;
+    justify-content: center;
+}
+
+#buttonBox button {
+    background-color:cornflowerblue;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }

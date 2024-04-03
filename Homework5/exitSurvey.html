@@ -1,3 +1,7 @@
+<!--
+Author: Ventura Abram
+Homework 5
+-->>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -103,29 +107,85 @@
                         Please select all infractions you recall committing during your relationship
                         with Ventura.
                     </h3>
-                    <!--
-                        Being late for a date
-                        poor treatment of waiting staff
-                        back talk
-                        excessive interruptions
-                        looking him in the eye
-                        not laughing at jokes
-                        laughing too much at jokes
-                        No compliments about muscles
-                        Not wearing high-heels
-                        Wearing too-high-heels.
-
-                    -->
-                    <input type="checkbox" id="infrac1" name="lateDate" value="infrac1"/>
-                    <label for="infrac1">I was late for a date</label>
-                    <input type="checkbox" id="infrac2" name="poorWait" value="infrac2"/>
-                    <label for="infrac2">I treat wait staff poorly</label>
-                    <input type="checkbox" id="infrac3" name="backTalk" value="infrac3"/>
-                    <label for="infrac3">Back talking Ventura</label>
-                    <input type="checkbox" id="infrac4" name="interrupt" value="infrac1"/>
-                    <label for="infrac1">I was late for a date</label>
+                    <div id="checkBoxBox">
+                        <div class="checkBoxChild">
+                            <label for="infrac1">
+                                <input type="checkbox" id="infrac1" name="lateDate" value="infrac1"/>
+                                I was late for a date
+                            </label>
+                            <label for="infrac2">
+                                <input type="checkbox" id="infrac2" name="poorWait" value="infrac2"/>
+                                I treated waiting staff poorly
+                            </label>
+                            <label for="infrac3">
+                                <input type="checkbox" id="infrac3" name="backTalk" value="infrac3"/>
+                                Back talking Ventura
+                            </label>
+                            <label for="infrac4">
+                                <input type="checkbox" id="infrac4" name="interrupt" value="infrac4"/>
+                                Excessive interruptions
+                            </label>
+                            <label for="infrac5">
+                                <input type="checkbox" id="infrac5" name="eyeContact" value="infrac5"/>
+                                Looking him in the eye
+                            </label>
+                        </div>
+                        <div class="checkBoxChild">
+                            <label for="infrac6">
+                                <input type="checkbox" id="infrac6" name="noLaughing" value="infrac6"/>
+                                Not laughing at his jokes
+                            </label>
+                            <label for="infrac7">
+                                <input type="checkbox" id="infrac7" name="fakeLaughter" value="infrac7"/>
+                                Laughing too much at his jokes
+                            </label>
+                            <label for="infrac8">
+                                <input type="checkbox" id="infrac8" name="noMusclesComp" value="infrac8"/>
+                                No compliments about his muscles
+                            </label>
+                            <label for="infrac9">
+                                <input type="checkbox" id="infrac9" name="noHighHeels" value="infrac9"/>
+                                Not wearing high-heels
+                            </label>
+                            <label for="infrac10">
+                                <input type="checkbox" id="infrac10" name="tooTall" value="infrac10"/>
+                                Wearing too-high-heels
+                            </label>
+                        </div>
+                    </div>
+                    <h3 class="questionText">
+                        Feel free to add any other infractions that aren't on the above list.
+                    </h3>
+                    <label for="customInfractions">
+                        <textarea id="customInfractions" name="customInfractions" rows="10" cols="100" placeholder="It's good to be honest" class="taInput"></textarea>
+                    </label>
                 </div>
-            </form>
-        </div>
+                <div id="argumentsBox">
+                    <div id="labelAndSelect">
+                        <label for="argumentCount">
+                            <h3 class="questionText">
+                            How many times did you argue with Ventura?
+                            </h3>
+                        </label>
+                        <select id="numArgs" name="numArgs">
+                            <option value="0">0</option>
+                            <option value="not0">More than 0</option>
+                        </select>
+                    </div>
+                    <textarea id="argTextarea" name="argTextarea" rows="10" cols="100" placeholder="What were you wrong about, and what did you learn?" class="taInput"></textarea>
+                </div>
+                <div id="selfImprovement">
+                    <h3 class="questionText">
+                        Lastly, any suggestions for how you might improve yourself?
+                    </h3>
+                    <textarea id="selfImrpvTA" name="selfImrpvTA" rows="10" cols="100" placeholder="We both know there's room for improvement" class="taInput"></textarea>
+                    <p>*your</p>
+                </div>
+                <div id="buttonBox">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
     </body>
 </html>
