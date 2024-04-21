@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-image: url(snookerBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainContentBox {
+    width: 100vw;
+    height: 100vh;
+}
+
+#topMenu {
+    background: linear-gradient(white 10%, rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoBox {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#logo {
+   height: 110%;
+   cursor: pointer;
+}
+
+#topMenu h1 {
+    font-family: "Playfair Display SC", serif;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#menuButtonBox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.menuButton {
+    font-family: "Playfair Display SC", serif;
+    font-size: large;
+    font-weight: 600;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.menuButton:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#hoverTicketDiv {
+    position: relative;
+}
