@@ -1,10 +1,13 @@
+<!-- Author: Ventura Abram
+Assignment 6
+Note: This website was designed on a monitor that was running at 2564x1440 resolution.
+It's best viewed with a 16:9 aspect ratio. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,28 +18,183 @@
         <div id="topMenu">
             <div id="logoBox">
                 <img src="billiardLogo.png" id="logo"/>
-                <h1>Tucson Billiard Society</h1>
+                <h1>Tucson Billiards Society</h1>
             </div>
             <div id="menuButtonBox">
                 <!--Buttons: Schedule, Tournament, Bet, Tickets, Register-->
-                <button class="menuButton">Schedule</button>
-                <button class="menuButton">Bet</button>
-                <div id="ticketButtonBox">
-                    <div id="defaultTicketDiv">
-                        <h3>Tickets</h3>
+                <div class="buttonBox"><button class="menuButton" id="scheduleButton">SCHEDULE</button></div>
+                <div class="buttonBox"><button class="menuButton" id="betButton">BET</button></div>
+                <div class="buttonBox" id="ticketBox">
+                    <div id="defaultTicketDiv" class="ticketButton">
+                        <h4 class="menuButtonText">TICKETS</h4>
                     </div>
-                    <div id="hoverTicketDiv"> 
+                    <div id="hoverTicketDiv" class="ticketButton"> 
                         <!-- This one will have a bgimage -->
-                        <h3>Tickets</h3>
+                        <h4 class="menuButtonText">TICKETS</h4>
                     </div>
                 </div>
-                <div class="registerButtonBox">
-                    <h3>REGISTER</h3>
+                <div class="buttonBox" id="registerBox">
+                    <div id="defaultRegisterDiv" class="registerButton">
+                        <h4 class="menuButtonText">REGISTER</h4>
+                    </div>
+                    <div id="hoverRegisterDiv" class="registerButton">
+                        <h4 class="menuButtonText">REGISTER</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="mainContent"></div>
+        <div id="mainContent">
+            <div id="leftPanel">
+                <div id="leftPanelLogoBox">
+                    <img src="billiardLogo2.png"/>
+                    <img src="casinoLogo.gif"/>
+                </div>
+                <h1 class="leftPanelText">THE TUCSON BILLIARDS SOCIETY </br>AND CASINO DEL SOL PRESENTS</h1>
+                <h1 class="leftPanelText">THE 2024 TUCSON SNOOKER CHAMPIONSHIP</h1>
+                <h1 class="leftPanelText">JULY 15TH - 19TH</h1>
+            </div>
+            <div id="rightPanel">
+                <div class="rightPanelContentDiv" id="scheduleContentDiv">
+                    <h1>MONDAY, JULY 15TH - FRIDAY, JULY 19TH</h1>
+                    <h3>MONDAY - TUESDAY: QUALIFYING ROUNDS. SINGLE-FRAME MATCHES</h3>
+                    <h3>WEDNESDAY: QUARTERFINALS.  THREE-FRAME MATCHES</h3>
+                    <h3>THURDAY: SEMIFINALS. FIVE-FRAME MATCHES</h3>
+                    <h3>FRIDAY: FINALS. FIRST TO WIN FIVE FRAMES WILL TAKE HOME</h3>
+                    <h1>$75,000</h1>
+                    <h3>AND AN EXTRA $25,000 WILL BE SPLIT AMONG THOSE WHO SCORE A MAXIMUM BREAK</h3>
+                </div>
+                <div class="rightPanelContentDiv" id="betContentDiv">
+                    <h3>SPECTATORS WILL BE ABLE TO PLACE BETS THROUGH CASINO DEL SOL STARTING JULY 1ST</h3>
+                    <h3>DEADLINE TO BET ON QUALIFYING MATCHES IS 12:00PM ON JULY 15TH</h3>
+                    <h3>DEADLINE TO BET ON QUARTERFINAL MATCHES IS 12:00PM ON JULY 17TH</h3>
+                    <h3>DEADLINE TO BET ON SEMIFINALS MATCHES IS 12:00PM ON JULY 18TH</h3>
+                    <h3>DEADLINE TO BET ON THE FINAL MATCH IS 12:00PM ON JULY 19TH</h3>
+                </div>
+                <div class="rightPanelContentDiv" id="ticketContentDiv">
+                    <h2>TICKETS ON SALE NOW!</h2>
+                    <h3>OUTDOOR SEATING AVAILABLE IN AVA AMPITHEATER</h3>
+                    <h3>VIP SEATING IN SUNSET ROOM</h3>
+                    <div id="emailInput">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email"/>
+                    </div>
+                    <div class="seatPickerBox">
+                        <label>AMPITHEATER</label>
+                        <div class="seatQuantityBox">
+                            <input type="image" src="minus.png" name="minusButton1" id="minusButton1" />
+                            <h3 id="ampiTickCount">0</h3>
+                            <input type="image" src="plus.png" name="plusButton1" id="plusButton1" />
+                        </div>
+                    </div>
+                    <div class="seatPickerBox">
+                        <label>SUNSET ROOM</label>
+                        <div class="seatQuantityBox">
+                            <input type="image" src="minus.png" name="minusButton2" id="minusButton2" />
+                            <h3 id="VIPTickCount">0</h3>
+                            <input type="image" src="plus.png" name="plusButton2" id="plusButton2" />
+                        </div>
+                    </div>
+                    <button type="submit" id="submitButton">CONTINUE</button>
+                </div>
+                <div class="rightPanelContentDiv" id="registerContentDiv">
+                    <h1>WANT TO COMPETE?</h1>
+                    <h3>THE TOURNAMENT WILL BE HELD IN THE SUNSET ROOM</h3>
+                    <h3>AT CASINO DEL SOL</h3>
+                    <h3>DEADLINE TO REGISTER IS AT 6:00PM ON JUNE 30TH</h3>
+                </div>
+            </div>
+        </div>
         <div id="footer"></div>
     </div>
+    <script>
+        //get buttons
+        var scheduleButton = document.getElementById("scheduleButton");
+        var betButton = document.getElementById("betButton");
+        var ticketButton = document.getElementById("ticketBox");
+        var registerButton = document.getElementById("registerBox");
+        //get divs
+        var scheduleDiv = document.getElementById("scheduleContentDiv");
+        var betDiv = document.getElementById("betContentDiv");
+        var ticketDiv = document.getElementById("ticketContentDiv");
+        var registerDiv = document.getElementById("registerContentDiv");
+        scheduleButton.addEventListener('click', ()=> {
+            scheduleDiv.style.opacity = 1;
+            betDiv.style.opacity = 0;
+            ticketDiv.style.opacity = 0;
+            registerDiv.style.opacity = 0;
+        });
+        betButton.addEventListener('click', ()=> {
+            scheduleDiv.style.opacity = 0;
+            betDiv.style.opacity = 1;
+            ticketDiv.style.opacity = 0;
+            registerDiv.style.opacity = 0;
+        });
+        ticketButton.addEventListener('click', ()=> {
+            scheduleDiv.style.opacity = 0;
+            betDiv.style.opacity = 0;
+            ticketDiv.style.opacity = 1;
+            registerDiv.style.opacity = 0;
+        });
+        registerButton.addEventListener('click', ()=> {
+            scheduleDiv.style.opacity = 0;
+            betDiv.style.opacity = 0;
+            ticketDiv.style.opacity = 0;
+            registerDiv.style.opacity = 1;
+        });
+
+        var minusButton = document.getElementById("minusButton1");
+        var plusButton = document.getElementById("plusButton1");
+        var ampitheaterTicketCount = 0;
+        var ampiTickCount = document.getElementById("ampiTickCount");
+
+        plusButton.addEventListener('click', ()=> {
+            minusButton.style.opacity = 1;
+            if(ampitheaterTicketCount < 9) {
+                ampitheaterTicketCount++;
+                ampiTickCount.innerText = ampitheaterTicketCount;
+            }
+            if(ampitheaterTicketCount == 9) {
+                plusButton.style.opacity = 0.5;
+            }
+        });
+
+        minusButton.addEventListener('click', ()=>{
+            plusButton.style.opacity = 1;
+            if(ampitheaterTicketCount > 0) {
+                ampitheaterTicketCount--;
+                ampiTickCount.innerText = ampitheaterTicketCount;
+            }
+            if(ampitheaterTicketCount == 0) {
+                minusButton.style.opacity = 0.5;
+            }
+        });
+
+        var minusButton2 = document.getElementById("minusButton2");
+        var plusButton2 = document.getElementById("plusButton2");
+        var VIPTicketCount = 0;
+        var VIPTickCount = document.getElementById("VIPTickCount");
+
+        plusButton2.addEventListener('click', ()=> {
+            minusButton2.style.opacity = 1;
+            if(VIPTicketCount < 9) {
+                VIPTicketCount++;
+                VIPTickCount.innerText = VIPTicketCount;
+            }
+            if(VIPTicketCount == 9) {
+                plusButton2.style.opacity = 0.5;
+            }
+        });
+
+        minusButton2.addEventListener('click', ()=>{
+            plusButton2.style.opacity = 1;
+            if(VIPTicketCount > 0) {
+                VIPTicketCount--;
+                VIPTickCount.innerText = VIPTicketCount;
+            }
+            if(VIPTicketCount == 0) {
+                minusButton2.style.opacity = 0.5;
+            }
+        });
+    </script>
 </body>
 </html>
