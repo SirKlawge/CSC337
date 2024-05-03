@@ -17,9 +17,15 @@ pearl jam -->
     <div id="masterDiv">
         <div id="topBar">
             <!-- Let this have the logo, a search bar, and the shopping cart icon -->
-            <img src="That's My Jam!_transparent.png"/>
-            <input type="text" id="searchBar" />
-            <img src="cartIcon.jpg"/>
+            <img src="That's My Jam!_transparent.png" id="logo"/>
+            <div id="searchBarDiv">
+                <input type="text" id="searchBar" />
+                <img src="searchIcon.jpg" id="searchIcon">
+            </div>
+            <div cartBox="">
+                <img src="cartEmptyIcon.jpg" id="cart"/>
+                <!-- <h3 id="totalItemCounter">0</h3> -->
+            </div>
         </div>
         <div id="sideShow"></div>
         <div id="itemShopDiv"></div>
