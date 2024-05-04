@@ -1,8 +1,9 @@
 body {
-    margin: auto;
+    margin: 0;
     background-image: url("woodBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 }
@@ -11,6 +12,7 @@ body {
     width: 80vw;
     height: 100vh;
     background-color: rgba(255, 228, 196, 0.704);
+    background-attachment: fixed;
     margin: auto;
 }
 
@@ -59,15 +61,78 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    object-fit: fill;
 }
 
 #cart {
     position: absolute;
-    height: 100%;
-    
+    height: 60%;
+    width: 60%;
 }
 
 #totalItemCounter {
     position: absolute;
+    font-size: 1.5vw;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
 
+#itemShopGrid {
+    margin: auto;
+    height: 85%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.shopItemDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopItemImage {
+    width: 60%;
+    height: 100%;
+}
+
+#strawberryJam { 
+    grid-row: 1 /  2;
+    grid-column: 1 / 2;
+}
+
+.quantityButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.minusButton {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.plusButton {
+    width: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.shopItemCounter {
+    font-size: large;
+}
+
+.itemLabel {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
 }

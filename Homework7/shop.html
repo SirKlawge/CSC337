@@ -11,6 +11,9 @@ pearl jam -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shopStyle.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>That's My Jam!</title>
 </head>
 <body>
@@ -22,13 +25,448 @@ pearl jam -->
                 <input type="text" id="searchBar" />
                 <img src="searchIcon.jpg" id="searchIcon">
             </div>
-            <div cartBox="">
+            <div id="cartBox">
                 <img src="cartEmptyIcon.jpg" id="cart"/>
-                <!-- <h3 id="totalItemCounter">0</h3> -->
+                <p id="totalItemCounter">0</p>
             </div>
         </div>
-        <div id="sideShow"></div>
-        <div id="itemShopDiv"></div>
+        <div id="itemShopGrid">
+            <div class="shopItemDiv" id="strawberryJam">
+                <h3 class="itemLabel">Strawberry $5.00</h3>
+                <img src="strawberryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="strawberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="strawberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="strawberryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="grapeJam">
+                <h3 class="itemLabel">Grape $4.00</h3>
+                <img src="grapeJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="grapeMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="grapeCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="grapePlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="raspberryJam">
+                <h3 class="itemLabel">Raspberry $6.00</h3>
+                <img src="raspberryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="raspberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="raspberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="raspberryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="apricotJam">
+                <h3 class="itemLabel">Apricot $6.00</h3>
+                <img src="apricotJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="apricotMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="apricotCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="apricotPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="peachJam">
+                <h3 class="itemLabel">Peach $6.00</h3>
+                <img src="peachJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="peachMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="peachCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="peachPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="figJam">
+                <h3 class="itemLabel">Fig $7.00</h3>
+                <img src="figJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="figMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="figCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="figPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="blackberryJam">
+                <h3 class="itemLabel">Blackberry $6.00</h3>
+                <img src="blackberryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="blackberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="blackberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="blackberryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="blueberryJam">
+                <h3 class="itemLabel">Blueberry $5.00</h3>
+                <img src="blueberryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="blueberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="blueberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="blueberryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="cherryJam">
+                <h3 class="itemLabel">Cherry $6.00</h3>
+                <img src="cherryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="cherryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="cherryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="cherryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="pineappleJam">
+                <h3 class="itemLabel">Pineapple $7.00</h3>
+                <img src="pineappleJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="pineappleMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="pineappleCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="pineapplePlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="marionberryJam">
+                <h3 class="itemLabel">Marionberry $12.00</h3>
+                <img src="marionberryJam.jpg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="marionberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="marionberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="marionberryPlus">
+                </div>
+            </div>
+            <div class="shopItemDiv" id="boysenberryJam">
+                <h3 class="itemLabel">Boysenberry $4.00</h3>
+                <img src="boysenberryJam.jpeg" class="shopItemImage"/>
+                <div class="quantityButtons">
+                    <img src="minus.png" id="boysenberryMinus" class="minusButton"/>
+                    <p class="shopItemCounter" id="boysenberryCounter">0</p>
+                    <img src="plus.png" class="plusButton" id="boysenberryPlus">
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
     </div>
+    <script>
+        //Get all the buttons
+        var strawberryMinusButton = document.getElementById("strawberryMinus");
+        var grapeMinusButton = document.getElementById("grapeMinus");
+        var raspberryMinusButton = document.getElementById("raspberryMinus");
+        var apricotMinusButton = document.getElementById("apricotMinus");
+        var peachMinusButton = document.getElementById("peachMinus");
+        var figMinusButton = document.getElementById("figMinus");
+        var blackberryMinusButton = document.getElementById("blackberryMinus");
+        var blueberryMinusButton = document.getElementById("blueberryMinus");
+        var cherryMinusButton = document.getElementById("cherryMinus");
+        var pineappleMinusButton = document.getElementById("pineappleMinus");
+        var marionberryMinusButton = document.getElementById("marionberryMinus");
+        var boysenberryMinusButton = document.getElementById("boysenberryMinus");
+
+        var strawberryPlusButton = document.getElementById("strawberryPlus");
+        var grapePlusButton = document.getElementById("grapePlus");
+        var raspberryPlusButton = document.getElementById("raspberryPlus");
+        var apricotPlusButton = document.getElementById("apricotPlus");
+        var peachPlusButton = document.getElementById("peachPlus");
+        var figPlusButton = document.getElementById("figPlus");
+        var blackberryPlusButton = document.getElementById("blackberryPlus");
+        var blueberryPlusButton = document.getElementById("blueberryPlus");
+        var cherryPlusButton = document.getElementById("cherryPlus");
+        var pineapplePlusButton = document.getElementById("pineapplePlus");
+        var marionberryPlusButton = document.getElementById("marionberryPlus");
+        var boysenberryPlusButton = document.getElementById("boysenberryPlus");
+
+        //Get the counter elements
+        var strawberryCounter = document.getElementById("strawberryCounter");
+        var grapeCounter = document.getElementById("grapeCounter");
+        var raspberryCounter = document.getElementById("raspberryCounter");
+        var apricotCounter = document.getElementById("apricotCounter");
+        var peachCounter = document.getElementById("peachCounter");
+        var figCounter = document.getElementById("figCounter");
+        var blackberryCounter = document.getElementById("blackberryCounter");
+        var blueberryCounter = document.getElementById("blueberryCounter");
+        var cherryCounter = document.getElementById("cherryCounter");
+        var pineappleCounter = document.getElementById("pineappleCounter");
+        var marionberryCounter = document.getElementById("marionberryCounter");
+        var boysenberryCounter = document.getElementById("boysenberryCounter");
+
+        var strawberryCount = 0;
+        var grapeCount = 0;
+        var raspberryCount = 0;
+        var apricotCount = 0;
+        var peachCount = 0;
+        var figCount = 0;
+        var blackberryCount = 0;
+        var blueberryCount = 0;
+        var cherryCount = 0;
+        var pineappleCount = 0;
+        var marionberryCount = 0;
+        var boysenberryCount = 0;
+
+        var totalItemCounter = document.getElementById("totalItemCounter");
+        var totalItemCount = 0;
+
+        var subtotal = 0;
+
+
+        //Plus button functionality
+        strawberryPlusButton.addEventListener("click", ()=> {
+            if(strawberryCount < 9) {
+                strawberryCount++;
+                strawberryCounter.innerText = strawberryCount;
+
+                totalItemCount++;
+                subtotal += 5;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        grapePlusButton.addEventListener("click", ()=> {
+            if(grapeCount < 9) {
+                grapeCount++;
+                grapeCounter.innerText = grapeCount;
+                totalItemCount++;
+                subtotal += 4;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        raspberryPlusButton.addEventListener("click", ()=> {
+            if(raspberryCount < 9) {
+                raspberryCount++;
+                raspberryCounter.innerText = raspberryCount;
+
+                totalItemCount++;
+                subtotal += 6;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        apricotPlusButton.addEventListener("click", ()=> {
+            if(apricotCount < 9) {
+                apricotCount++;
+                apricotCounter.innerText = apricotCount;
+                totalItemCount++;
+                subtotal += 6;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        peachPlusButton.addEventListener("click", ()=> {
+            if(peachCount < 9) {
+                peachCount++;
+                peachCounter.innerText = peachCount;
+                totalItemCount++;
+                subtotal += 6;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        figPlusButton.addEventListener("click", ()=> {
+            if(figCount < 9) {
+                figCount++;
+                figCounter.innerText = figCount;
+                totalItemCount++;
+                subtotal += 7;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        blackberryPlusButton.addEventListener("click", ()=> {
+            if(blackberryCount < 9) {
+                blackberryCount++;
+                blackberryCounter.innerText = blackberryCount;
+                totalItemCount++;
+                subtotal += 6;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        blueberryPlusButton.addEventListener("click", ()=> {
+            if(blueberryCount < 9) {
+                blueberryCount++;
+                blueberryCounter.innerText = blueberryCount;
+                totalItemCount++;
+                subtotal += 5;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        cherryPlusButton.addEventListener("click", ()=> {
+            if(cherryCount < 9) {
+                cherryCount++;
+                cherryCounter.innerText = cherryCount;
+                totalItemCount++;
+                subtotal += 6;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        pineapplePlusButton.addEventListener("click", ()=> {
+            if(pineappleCount < 9) {
+                pineappleCount++;
+                pineappleCounter.innerText = pineappleCount;
+                totalItemCount++;
+                subtotal += 7;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        marionberryPlusButton.addEventListener("click", ()=> {
+            if(marionberryCount < 9) {
+                marionberryCount++;
+                marionberryCounter.innerText = marionberryCount;
+                totalItemCount++;
+                subtotal += 12;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        boysenberryPlusButton.addEventListener("click", ()=> {
+            if(boysenberryCount < 9) {
+                boysenberryCount++;
+                boysenberryCounter.innerText = boysenberryCount;
+                totalItemCount++;
+                subtotal += 4;
+            }
+            totalItemCounter.innerText = totalItemCount;
+
+        });
+
+        //Minus Button functionality
+        strawberryMinusButton.addEventListener("click", ()=>{
+            if(strawberryCount > 0) {
+                strawberryCount--;
+                strawberryCounter.innerText = strawberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+                subtotal -= 5;
+            }
+        });
+
+        grapeMinusButton.addEventListener("click", ()=>{
+            if(grapeCount > 0) {
+                grapeCount--;
+                grapeCounter.innerText = grapeCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+                subtotal -= 4;
+            }
+        });
+
+        raspberryMinusButton.addEventListener("click", ()=>{
+            if(raspberryCount > 0) {
+                raspberryCount--;
+                raspberryCounter.innerText = raspberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+                subtotal -= 6;
+            }
+        });
+
+        apricotMinusButton.addEventListener("click", ()=>{
+            if(apricotCount > 0) {
+                apricotCount--;
+                apricotCounter.innerText = apricotCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 6;
+            }
+        });
+
+        peachMinusButton.addEventListener("click", ()=>{
+            if(peachCount > 0) {
+                peachCount--;
+                peachCounter.innerText = peachCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 6;
+            }
+        });
+
+        figMinusButton.addEventListener("click", ()=>{
+            if(figCount > 0) {
+                figCount--;
+                figCounter.innerText = figCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 7;
+            }
+        });
+
+        blackberryMinusButton.addEventListener("click", ()=>{
+            if(blackberryCount > 0) {
+                blackberryCount--;
+                blackberryCounter.innerText = blackberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 6;
+            }
+        });
+
+        blueberryMinusButton.addEventListener("click", ()=>{
+            if(blueberryCount > 0) {
+                blueberryCount--;
+                blueberryCounter.innerText = blueberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 5;
+            }
+        });
+        
+        cherryMinusButton.addEventListener("click", ()=>{
+            if(cherryCount > 0) {
+                cherryCount--;
+                cherryCounter.innerText = cherryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 6;
+            }
+        });
+
+        pineappleMinusButton.addEventListener("click", ()=>{
+            if(pineappleCount > 0) {
+                pineappleCount--;
+                pineappleCounter.innerText = pineappleCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 5;
+            }
+        });
+
+        marionberryMinusButton.addEventListener("click", ()=>{
+            if(marionberryCount > 0) {
+                marionberryCount--;
+                marionberryCounter.innerText = marionberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 12;
+            }
+        });
+
+        boysenberryMinusButton.addEventListener("click", ()=>{
+            if(boysenberryCount > 0) {
+                boysenberryCount--;
+                boysenberryCounter.innerText = boysenberryCount;
+                totalItemCount--;
+                totalItemCounter.innerText = totalItemCount;
+
+                subtotal -= 4;
+            }
+        });
+    </script>
 </body>
 </html>
