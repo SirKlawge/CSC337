@@ -25,6 +25,10 @@ pearl jam -->
                 <input type="text" id="searchBar" />
                 <img src="searchIcon.jpg" id="searchIcon">
             </div>
+            <div id="subtotalBox">
+                <h3 id="subtotalText">Subtotal:</h3>
+                <h4 id="subtotalNumber">$0.00</h4>
+            </div>
             <div id="cartBox">
                 <img src="cartEmptyIcon.jpg" id="cart"/>
                 <p id="totalItemCounter">0</p>
@@ -198,6 +202,7 @@ pearl jam -->
         var boysenberryCount = 0;
 
         var totalItemCounter = document.getElementById("totalItemCounter");
+        var subtotalCounter = document.getElementById("subtotalNumber");
         var totalItemCount = 0;
 
         var subtotal = 0;
@@ -212,6 +217,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 5;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -223,6 +229,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 4;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -235,6 +242,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 6;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -246,6 +254,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 6;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -257,6 +266,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 6;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -268,6 +278,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 7;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -279,6 +290,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 6;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -290,6 +302,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 5;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -301,6 +314,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 6;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -312,6 +326,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 7;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -323,6 +338,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 12;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -334,6 +350,7 @@ pearl jam -->
                 totalItemCount++;
                 subtotal += 4;
             }
+            subtotalCounter.innerText = "$" + subtotal + ".00";
             totalItemCounter.innerText = totalItemCount;
 
         });
@@ -346,6 +363,7 @@ pearl jam -->
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
                 subtotal -= 5;
+                subtotalCounter.innerText = "$" + subtotal + ".00";
             }
         });
 
@@ -356,6 +374,7 @@ pearl jam -->
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
                 subtotal -= 4;
+                subtotalCounter.innerText = "$" + subtotal + ".00";
             }
         });
 
@@ -366,6 +385,7 @@ pearl jam -->
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
                 subtotal -= 6;
+                subtotalCounter.innerText = "$" + subtotal + ".00";
             }
         });
 
@@ -375,7 +395,7 @@ pearl jam -->
                 apricotCounter.innerText = apricotCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 6;
             }
         });
@@ -386,7 +406,7 @@ pearl jam -->
                 peachCounter.innerText = peachCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 6;
             }
         });
@@ -397,7 +417,7 @@ pearl jam -->
                 figCounter.innerText = figCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 7;
             }
         });
@@ -408,7 +428,7 @@ pearl jam -->
                 blackberryCounter.innerText = blackberryCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 6;
             }
         });
@@ -419,7 +439,7 @@ pearl jam -->
                 blueberryCounter.innerText = blueberryCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 5;
             }
         });
@@ -430,7 +450,7 @@ pearl jam -->
                 cherryCounter.innerText = cherryCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 6;
             }
         });
@@ -441,7 +461,7 @@ pearl jam -->
                 pineappleCounter.innerText = pineappleCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 5;
             }
         });
@@ -452,7 +472,7 @@ pearl jam -->
                 marionberryCounter.innerText = marionberryCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 12;
             }
         });
@@ -463,7 +483,7 @@ pearl jam -->
                 boysenberryCounter.innerText = boysenberryCount;
                 totalItemCount--;
                 totalItemCounter.innerText = totalItemCount;
-
+                subtotalCounter.innerText = "$" + subtotal + ".00";
                 subtotal -= 4;
             }
         });
